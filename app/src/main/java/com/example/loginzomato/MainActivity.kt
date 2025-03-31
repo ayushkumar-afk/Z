@@ -14,8 +14,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.loginzomato.ui.loginpage
 import com.example.loginzomato.ui.profile_screen_ui
+import com.example.loginzomato.ui.theme.CategoriesScreen
 import com.example.loginzomato.ui.theme.LoginZomatoTheme
-import com.example.loginzomato.ui.theme.categoriescreen
+
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +27,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             LoginZomatoTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    categoriescreen(Modifier.padding(innerPadding))
+                    CategoriesScreen(Modifier.padding(innerPadding))
                 }
             }
         }
