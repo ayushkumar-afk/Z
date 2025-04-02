@@ -12,20 +12,33 @@ import com.example.loginzomato.R
 
 // Set of Material typography styles to start with
 val Typography = Typography(
-    bodyLarge = TextStyle(
-        fontFamily = FontFamily.Default,
+    headlineLarge = TextStyle(
+        fontFamily = FontFamily(Font(R.font.metropolis)),
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
     ),
     headlineMedium = TextStyle(
-        fontFamily = FontFamily(Font(R.font.metropolisextrabold   )),
+        fontFamily = FontFamily(Font(R.font.proximanovaextrabold   )),
         fontSize = 16.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp,
         fontWeight = FontWeight.Normal
+    ),
+    headlineSmall = TextStyle(
+        fontFamily = FontFamily(Font(R.font.proximanovaregular),
+            )
+
+
+    ),
+    bodyLarge = TextStyle(
+
     )
+
+
+
+
     /* Other default text styles to override
     titleLarge = TextStyle(
         fontFamily = FontFamily.Default,
